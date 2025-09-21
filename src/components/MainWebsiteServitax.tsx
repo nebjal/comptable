@@ -454,8 +454,8 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="section-padding bg-white">
+      {/* Testimonials Section - À Propos */}
+      <section id="apropos" className="section-padding bg-white">
         <div className="container-servitax">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-black text-servitax-dark mb-6">
