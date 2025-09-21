@@ -43,6 +43,16 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
   const [currentSection, setCurrentSection] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Navigation vers les sections
+  const scrollToSection = (sectionIndex: number) => {
+    setCurrentSection(sectionIndex);
+    const sectionIds = ['accueil', 'services', 'apropos', 'ressources', 'contact'];
+    const element = document.getElementById(sectionIds[sectionIndex]);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   // Animation des compteurs
   const [counters, setCounters] = useState({
     clients: 0,
