@@ -14,6 +14,15 @@ export default defineConfig({
     ]
   },
   optimizeDeps: {
-    exclude: ['lucide-react'],
+    include: ['lucide-react'],
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'lucide-icons': ['lucide-react']
+        }
+      }
+    }
+  }
 });
