@@ -30,7 +30,8 @@ import {
   UserCheck,
   FileCheck,
   ClockIcon,
-  PhoneCall
+  PhoneCall,
+  MessageSquare
 } from 'lucide-react';
 
 interface MainWebsiteServitaxProps {
