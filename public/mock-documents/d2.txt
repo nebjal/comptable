@@ -1,0 +1,49 @@
+# RELEVÉ BANCAIRE
+# Compte Chèques - Août 2025
+
+**BANQUE:** Banque Nationale
+**CLIENT:** Restaurant XYZ
+**COMPTE:** 12345-678-901
+**PÉRIODE:** 1er au 31 août 2025
+
+## SOLDE D'OUVERTURE
+**Date:** 1er août 2025
+**Solde:** 15,750.25 $
+
+## TRANSACTIONS
+
+### DÉPÔTS
+| Date | Description | Montant |
+|------|-------------|---------|
+| 02/08 | Ventes journalières | 2,450.00 $ |
+| 05/08 | Paiement client | 1,200.00 $ |
+| 08/08 | Dépôt espèces | 850.00 $ |
+| 12/08 | Ventes fin de semaine | 3,200.00 $ |
+| 15/08 | Paiement fournisseur | 950.00 $ |
+| 18/08 | Ventes journalières | 2,100.00 $ |
+| 22/08 | Dépôt espèces | 1,500.00 $ |
+| 25/08 | Ventes fin de semaine | 2,800.00 $ |
+| 28/08 | Paiement client | 750.00 $ |
+
+**TOTAL DÉPÔTS:** 15,800.00 $
+
+### RETRAITS/PAIEMENTS
+| Date | Description | Montant |
+|------|-------------|---------|
+| 03/08 | Loyer commercial | 3,500.00 $ |
+| 07/08 | Fournisseurs | 2,200.00 $ |
+| 10/08 | Salaires | 8,500.00 $ |
+| 14/08 | Électricité | 450.00 $ |
+| 17/08 | Assurances | 320.00 $ |
+| 21/08 | Équipement cuisine | 1,800.00 $ |
+| 24/08 | Taxes municipales | 650.00 $ |
+| 27/08 | Fournitures | 280.00 $ |
+| 31/08 | Divers | 150.00 $ |
+
+**TOTAL RETRAITS:** 17,850.00 $
+
+## SOLDE DE CLÔTURE
+**Date:** 31 août 2025
+**Solde:** 13,700.25 $
+
+*Ce relevé est fourni à titre informatif*

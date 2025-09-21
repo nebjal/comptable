@@ -1,0 +1,24 @@
+# FACTURE FOURNISSEUR
+# Équipement Bureau - 001
+
+**FOURNISSEUR:** TechSolutions Inc.
+**CLIENT:** Entreprise ABC Inc.
+**DATE:** 12 janvier 2025
+**NUMÉRO:** FACT-2025-001
+
+## DÉTAILS DE LA FACTURE
+
+| Description | Quantité | Prix Unit. | Total |
+|-------------|----------|------------|-------|
+| Ordinateur portable | 5 | 1,200.00 $ | 6,000.00 $ |
+| Écrans 27" | 5 | 350.00 $ | 1,750.00 $ |
+| Claviers ergonomiques | 5 | 120.00 $ | 600.00 $ |
+| Souris sans fil | 5 | 45.00 $ | 225.00 $ |
+
+**SOUS-TOTAL:** 8,575.00 $
+**TAXES TPS (5%):** 428.75 $
+**TAXES TVQ (9.975%):** 855.16 $
+**TOTAL:** 9,858.91 $
+
+*Conditions de paiement: 30 jours*
+*Date d'échéance: 11 février 2025*

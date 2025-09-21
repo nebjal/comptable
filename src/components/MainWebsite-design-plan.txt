@@ -1,0 +1,23 @@
+// Images inspirées de Servitax
+// Utilisez le logo, dashboard-preview.jpg, et mock-documents/5.jpg pour illustrer la page.
+
+// Modernisation du design :
+// - En-tête épuré avec logo
+// - Section "Pourquoi nous choisir" avec texte et image
+// - Section "Nos Services" avec icônes et illustrations
+// - Appel à l'action clair
+// - Palette : blanc, bleu, vert, gris clair
+
+// Voici le plan pour MainWebsite.tsx :
+// 1. En-tête avec logo et slogan
+// 2. Section "Pourquoi nous choisir" (texte + image)
+// 3. Section "Nos Services" (cartes avec icônes)
+// 4. Section "Commencer" (bouton, image dashboard)
+// 5. Footer simple
+
+// Les images à utiliser :
+// - /public/dashboard-preview.jpg
+// - /public/mock-documents/5.jpg
+// - Logo (déjà présent)
+
+// Prochaine étape : appliquer ce design à MainWebsite.tsx
