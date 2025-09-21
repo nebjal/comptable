@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import MainWebsite from './MainWebsite';
+import MainWebsiteServitax from './MainWebsiteServitax';
 
 export default function MainWebsitePlaceholder(): JSX.Element {
-  return <MainWebsite />;
+  return <MainWebsiteServitax />;
 }
