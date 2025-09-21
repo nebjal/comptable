@@ -188,9 +188,11 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
               {['Accueil', 'Services', 'À Propos', 'Ressources', 'Contact'].map((item, index) => (
                 <button
                   key={item}
-                  onClick={() => setCurrentSection(index)}
-                  className={`nav-item-servitax px-4 py-2 rounded-lg ${
-                    currentSection === index ? 'active bg-servitax-primary/10' : ''
+                  onClick={() => scrollToSection(index)}
+                  className={`nav-item-servitax px-4 py-2 rounded-lg transition-all duration-300 ${
+                    currentSection === index 
+                      ? 'active bg-servitax-primary text-white' 
+                      : 'text-servitax-dark hover:bg-servitax-primary/10 hover:text-servitax-primary'
                   }`}
                 >
                   {item}
