@@ -178,9 +178,18 @@ function App() {
     return (
       <HelmetProvider>
         <MainWebsitePlaceholder 
-          onClientLogin={() => setUserType('client')}
-          onNewClient={() => setShowClientRegistration(true)}
-          onAdminAccess={() => setUserType('admin')}
+          onClientLogin={() => {
+            setUserType('client');
+            setShowWebsite(false);
+          }}
+          onNewClient={() => {
+            setShowClientRegistration(true);
+            setShowWebsite(false);
+          }}
+          onAdminAccess={() => {
+            setUserType('admin');
+            setShowWebsite(false);
+          }}
         />
       </HelmetProvider>
     );
