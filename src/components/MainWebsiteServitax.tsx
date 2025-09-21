@@ -33,7 +33,13 @@ import {
   PhoneCall
 } from 'lucide-react';
 
-export default function MainWebsiteServitax() {
+interface MainWebsiteServitaxProps {
+  onClientLogin?: () => void;
+  onNewClient?: () => void;
+  onAdminAccess?: () => void;
+}
+
+export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdminAccess }: MainWebsiteServitaxProps) {
   const [currentSection, setCurrentSection] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
