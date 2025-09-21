@@ -618,29 +618,43 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
             <div className="space-y-6">
               <h4 className="text-xl font-bold">Nous Contacter</h4>
               <div className="space-y-4 text-gray-300">
-                <div className="flex items-center space-x-3 group">
+                <div className="flex items-start space-x-3 group">
                   <div className="w-8 h-8 bg-servitax-primary/20 rounded-lg flex items-center justify-center group-hover:bg-servitax-primary/30 transition-colors duration-300">
                     <Phone className="h-4 w-4 text-servitax-accent" />
                   </div>
-                  <span className="group-hover:text-servitax-accent transition-colors duration-300">
-                    Support Téléphonique
-                  </span>
+                  <div className="group-hover:text-servitax-accent transition-colors duration-300">
+                    <div className="font-medium">Téléphone</div>
+                    <div className="text-sm">(514) 215-2020</div>
+                    <div className="text-sm">(514) 215-2001</div>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-3 group">
+                <div className="flex items-start space-x-3 group">
                   <div className="w-8 h-8 bg-servitax-secondary/20 rounded-lg flex items-center justify-center group-hover:bg-servitax-secondary/30 transition-colors duration-300">
                     <Mail className="h-4 w-4 text-servitax-secondary" />
                   </div>
-                  <span className="group-hover:text-servitax-secondary transition-colors duration-300">
-                    support@servitax.ca
-                  </span>
+                  <div className="group-hover:text-servitax-secondary transition-colors duration-300">
+                    <div className="font-medium">Email</div>
+                    <div className="text-sm">info@servitax.ca</div>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-3 group">
+                <div className="flex items-start space-x-3 group">
                   <div className="w-8 h-8 bg-servitax-accent/20 rounded-lg flex items-center justify-center group-hover:bg-servitax-accent/30 transition-colors duration-300">
                     <MapPin className="h-4 w-4 text-servitax-accent" />
                   </div>
-                  <span className="group-hover:text-servitax-accent transition-colors duration-300">
-                    Partout au Canada
-                  </span>
+                  <div className="group-hover:text-servitax-accent transition-colors duration-300">
+                    <div className="font-medium">Adresse</div>
+                    <div className="text-sm">100-1490, Rue La Fontaine</div>
+                    <div className="text-sm">Saint-Laurent, QC, H4L5M1</div>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-3 group">
+                  <div className="w-8 h-8 bg-green-500/20 rounded-lg flex items-center justify-center group-hover:bg-green-500/30 transition-colors duration-300">
+                    <MessageSquare className="h-4 w-4 text-green-500" />
+                  </div>
+                  <div className="group-hover:text-green-400 transition-colors duration-300">
+                    <div className="font-medium">WhatsApp</div>
+                    <div className="text-sm">(514) 691-1815</div>
+                  </div>
                 </div>
               </div>
             </div>
