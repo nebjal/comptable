@@ -497,8 +497,8 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section-padding bg-gradient-to-br from-servitax-primary via-servitax-secondary to-servitax-accent text-white">
+      {/* CTA Section - Ressources */}
+      <section id="ressources" className="section-padding bg-gradient-to-br from-servitax-primary via-servitax-secondary to-servitax-accent text-white">
         <div className="container-servitax text-center">
           <div className="max-w-4xl mx-auto space-y-8">
             <h2 className="text-4xl lg:text-5xl font-black leading-tight">
