@@ -243,6 +243,7 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
                   <span className="font-semibold text-servitax-primary"> Excellence professionnelle</span>, 
                   <span className="font-semibold text-servitax-secondary"> prix compétitifs</span> et 
                   <span className="font-semibold text-servitax-accent"> sécurité des données</span>.
+                  Adoption technologique et environnements sans papier.
                 </p>
               </div>
 
