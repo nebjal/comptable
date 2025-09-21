@@ -500,12 +500,18 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <button className="bg-white text-servitax-primary font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-lg">
+              <button 
+                onClick={onClientLogin}
+                className="bg-white text-servitax-primary font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 text-lg"
+              >
                 <UserCheck className="h-6 w-6 mr-3 inline" />
                 Client Existant - Accéder à mon dossier
               </button>
 
-              <button className="bg-white/20 backdrop-blur-sm border border-white/30 text-white font-semibold px-8 py-4 rounded-xl hover:bg-white/30 transition-all duration-300 text-lg">
+              <button 
+                onClick={onNewClient}
+                className="bg-white/20 backdrop-blur-sm border border-white/30 text-white font-semibold px-8 py-4 rounded-xl hover:bg-white/30 transition-all duration-300 text-lg"
+              >
                 <Users className="h-6 w-6 mr-3 inline" />
                 Nouveau Client - Créer mon dossier
               </button>
