@@ -1,48 +1,6 @@
-import SettingsAPI from './SettingsAPI';
-import { useRef } from 'react';
-import { useState, useEffect } from 'react';
-import {
-  FileText,
-  Users,
-  AlertTriangle,
-  CheckCircle,
-  TrendingUp,
-  Calendar,
-  MessageSquare,
-  Settings,
-  BarChart3,
-  UserCheck,
-  Zap,
-  Bell,
-  Download,
-  Eye,
-  Edit,
-  Send,
-  Archive,
-  Search,
-  Plus,
-  Star,
-  Target,
-  Activity,
-  PieChart,
-  Mail,
-  Phone,
-  DollarSign,
-  Timer,
-  File,
-  RefreshCw,
-  Clock,
-  Shield,
-  Lock,
-  ExternalLink,
-  
-  X,
-  Upload
-} from 'lucide-react';
-import { useSignatureRequest } from '../hooks/useSignatureRequest';
-import { sendNotification } from '../services/sendNotification';
+import DashboardServitax from './DashboardServitax';
 
-export default function Dashboard() {
+export default DashboardServitax;
   const [selectedClientId, setSelectedClientId] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState('overview');
   const [searchTerm, setSearchTerm] = useState('');
