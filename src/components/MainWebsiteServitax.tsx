@@ -567,6 +567,120 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
         </div>
       </section>
 
+      {/* Contact Section */}
+      <section id="contact" className="section-padding bg-white">
+        <div className="container-servitax">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center px-4 py-2 bg-servitax-primary/10 border border-servitax-primary/20 rounded-full text-servitax-primary text-sm font-semibold mb-6">
+              <Mail className="h-4 w-4 mr-2" />
+              Nous Contacter
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-black text-servitax-dark mb-6">
+              Parlons de Vos
+              <span className="block text-gradient-accent">Besoins Fiscaux</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Contactez-nous par email, téléphone ou WhatsApp pour toute question concernant vos 
+              déclarations de revenus, planification fiscale ou solutions comptables cloud.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Contact Info */}
+            <div className="space-y-8">
+              <div className="flex items-start space-x-4 p-6 bg-gray-50 rounded-2xl">
+                <div className="w-12 h-12 bg-servitax-primary rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Phone className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-servitax-dark mb-2">Téléphone</h4>
+                  <p className="text-gray-600 mb-2">Appelez-nous directement :</p>
+                  <div className="space-y-1">
+                    <p className="font-semibold text-servitax-primary">(514) 215-2020</p>
+                    <p className="font-semibold text-servitax-primary">(514) 215-2001</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4 p-6 bg-gray-50 rounded-2xl">
+                <div className="w-12 h-12 bg-servitax-secondary rounded-xl flex items-center justify-center flex-shrink-0">
+                  <Mail className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-servitax-dark mb-2">Email</h4>
+                  <p className="text-gray-600 mb-2">Écrivez-nous à :</p>
+                  <p className="font-semibold text-servitax-secondary">info@servitax.ca</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4 p-6 bg-gray-50 rounded-2xl">
+                <div className="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <MessageSquare className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-servitax-dark mb-2">WhatsApp</h4>
+                  <p className="text-gray-600 mb-2">Chat direct :</p>
+                  <p className="font-semibold text-green-600">(514) 691-1815</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4 p-6 bg-gray-50 rounded-2xl">
+                <div className="w-12 h-12 bg-servitax-accent rounded-xl flex items-center justify-center flex-shrink-0">
+                  <MapPin className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <h4 className="text-lg font-bold text-servitax-dark mb-2">Adresse</h4>
+                  <div className="text-gray-600">
+                    <p>100-1490, Rue La Fontaine</p>
+                    <p>Saint-Laurent, QC, H4L5M1</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact Form Mockup */}
+            <div className="bg-gradient-to-br from-servitax-primary/5 to-servitax-secondary/5 rounded-3xl p-8">
+              <h3 className="text-2xl font-bold text-servitax-dark mb-6">Prendre Rendez-vous</h3>
+              <div className="space-y-4">
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">Prénom</label>
+                    <div className="w-full h-12 bg-white rounded-lg border border-gray-200"></div>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">Nom</label>
+                    <div className="w-full h-12 bg-white rounded-lg border border-gray-200"></div>
+                  </div>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+                  <div className="w-full h-12 bg-white rounded-lg border border-gray-200"></div>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">Téléphone</label>
+                  <div className="w-full h-12 bg-white rounded-lg border border-gray-200"></div>
+                </div>
+                <div>
+                  <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                  <div className="w-full h-32 bg-white rounded-lg border border-gray-200"></div>
+                </div>
+                <button className="btn-servitax-primary w-full">
+                  <Send className="h-5 w-5 mr-2" />
+                  Envoyer le Message
+                </button>
+              </div>
+              
+              <div className="mt-6 pt-6 border-t border-gray-200">
+                <p className="text-center text-sm text-gray-600">
+                  Ou prenez rendez-vous directement via 
+                  <a href="#" className="text-servitax-primary font-semibold ml-1">Calendly</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-servitax-dark text-white section-padding">
         <div className="container-servitax">
