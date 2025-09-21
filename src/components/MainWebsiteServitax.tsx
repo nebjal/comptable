@@ -419,6 +419,329 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
         </div>
       </section>
 
+      {/* Detailed Services Section */}  
+      <section className="section-padding bg-gradient-to-br from-gray-50 to-white">
+        <div className="container-servitax">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center px-4 py-2 bg-servitax-secondary/10 border border-servitax-secondary/20 rounded-full text-servitax-secondary text-sm font-semibold mb-6">
+              <Users className="h-4 w-4 mr-2" />
+              Services Spécialisés
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-black text-servitax-dark mb-6">
+              Clientèle Diversifiée
+              <span className="block text-gradient-secondary">Solutions Personnalisées</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Chaque situation est unique. Nous offrons des services sur mesure pour vous accompagner dans la gestion 
+              de vos obligations fiscales et l'optimisation de vos avantages.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+            {/* Familles */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                <Users className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-servitax-dark mb-4">Familles</h3>
+              <p className="text-gray-600 mb-6">
+                Maximiser les prestations et crédits auxquels les familles peuvent prétendre.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-gray-700">Prestation pour enfants - Aide aux nouveaux arrivants</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-gray-700">Crédits TPS, frais de garde optimisés</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Étudiants */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6">
+                <BookOpen className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-servitax-dark mb-4">Étudiants</h3>
+              <p className="text-gray-600 mb-6">
+                Accompagnement dans la gestion des finances et obligations fiscales étudiantes.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-gray-700">Clarification du statut fiscal des étudiants</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-gray-700">Optimisation des crédits pour frais de scolarité</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Retraités */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                <Clock className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-servitax-dark mb-4">Retraités</h3>
+              <p className="text-gray-600 mb-6">
+                Aide pour maximiser les programmes et pensions auxquels ils sont éligibles.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-gray-700">Pension SV, RPC, autres programmes retraite</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-gray-700">Crédits d'impôt pour revenus de pension</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Personnes Handicapées */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mb-6">
+                <Shield className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-servitax-dark mb-4">Personnes Handicapées</h3>
+              <p className="text-gray-600 mb-6">
+                Services spécifiques pour obtenir les crédits et avantages fiscaux dus.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-gray-700">Crédit d'impôt pour personnes handicapées</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-gray-700">Planification dépenses médicales admissibles</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Nouveaux Immigrants */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6">
+                <Globe className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-servitax-dark mb-4">Nouveaux Immigrants</h3>
+              <p className="text-gray-600 mb-6">
+                Facilitation de l'intégration fiscale et financière pour les nouveaux arrivants.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-gray-700">Optimisation fiscale spécifique nouveaux immigrants</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-gray-700">Aide gestion finances lors installation Canada</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Propriétaires Locatifs */}
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6">
+                <Building2 className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-servitax-dark mb-4">Propriétaires Locatifs</h3>
+              <p className="text-gray-600 mb-6">
+                Accompagnement pour la gestion des obligations fiscales immobilières.
+              </p>
+              <div className="space-y-3">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-gray-700">Déclaration revenus locatifs et déductions</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0" />
+                  <span className="text-sm text-gray-700">Production Relevé 31 (RL31) obligatoire</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Formation Section */}
+      <section className="section-padding bg-white">
+        <div className="container-servitax">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <div className="inline-flex items-center px-4 py-2 bg-servitax-accent/10 border border-servitax-accent/20 rounded-full text-servitax-accent text-sm font-semibold mb-6">
+                <BookOpen className="h-4 w-4 mr-2" />
+                Formation
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-black text-servitax-dark mb-6">
+                Formation
+                <span className="block text-gradient-accent">QuickBooks Online</span>
+              </h2>
+              <p className="text-xl text-gray-600 leading-relaxed mb-8">
+                Formations sur place et en ligne pour petites entreprises, comptables et aides-comptables. 
+                Maîtrisez QuickBooks Online et économisez temps et argent.
+              </p>
+              
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-servitax-accent mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Maîtrise complète de QuickBooks Online sur ordinateur et mobile</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-servitax-accent mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Compréhension des concepts comptables utilisés</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-servitax-accent mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Formation enregistrement transactions (facturation, paiements)</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-servitax-accent mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Intégration applications (paie, gestion, CRM)</span>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <CheckCircle className="h-6 w-6 text-servitax-accent mt-0.5 flex-shrink-0" />
+                  <span className="text-gray-700">Élaboration rapports pour comptable et fiscaliste</span>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button className="btn-servitax-primary">
+                  <Calendar className="h-5 w-5 mr-2" />
+                  Réserver Formation
+                </button>
+                <button className="btn-servitax-outline">
+                  Auto-Formation Gratuite
+                </button>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-servitax-accent/10 to-servitax-primary/10 rounded-3xl p-8">
+              <div className="text-center mb-8">
+                <div className="w-24 h-24 bg-gradient-to-br from-servitax-accent to-servitax-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
+                  <Calculator className="h-12 w-12 text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-servitax-dark mb-4">Formations Disponibles</h3>
+              </div>
+              
+              <div className="space-y-4">
+                <div className="bg-white rounded-2xl p-6 shadow-sm">
+                  <h4 className="font-bold text-servitax-dark mb-2">Petites Entreprises & Travailleurs Autonomes</h4>
+                  <p className="text-gray-600 text-sm">Formation complète QuickBooks Online avec intégrations</p>
+                </div>
+                
+                <div className="bg-white rounded-2xl p-6 shadow-sm">
+                  <h4 className="font-bold text-servitax-dark mb-2">Comptables & Commis Comptables</h4>
+                  <p className="text-gray-600 text-sm">Préparation certifications de base et avancées sur demande</p>
+                </div>
+                
+                <div className="bg-white rounded-2xl p-6 shadow-sm">
+                  <h4 className="font-bold text-servitax-dark mb-2">Formation Personnalisée</h4>
+                  <p className="text-gray-600 text-sm">Présentiel ou à distance selon vos besoins spécifiques</p>
+                </div>
+              </div>
+              
+              <div className="mt-8 p-4 bg-yellow-50 rounded-2xl border border-yellow-200">
+                <p className="text-yellow-800 text-sm font-medium text-center">
+                  💡 Formation certifiante QuickBooks disponible
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Ressources Section */}
+      <section className="section-padding bg-gradient-to-br from-servitax-primary/5 to-servitax-secondary/5">
+        <div className="container-servitax">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center px-4 py-2 bg-servitax-primary/10 border border-servitax-primary/20 rounded-full text-servitax-primary text-sm font-semibold mb-6">
+              <FileText className="h-4 w-4 mr-2" />
+              Ressources Utiles
+            </div>
+            <h2 className="text-4xl lg:text-5xl font-black text-servitax-dark mb-6">
+              Outils & Informations
+              <span className="block text-gradient-primary">Essentiels</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Ressources complètes pour vous accompagner dans la gestion de vos finances, démarches fiscales 
+              et optimisation de vos processus professionnels.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                <Calculator className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-servitax-dark mb-4">Calculateurs</h3>
+              <p className="text-gray-600 mb-6">
+                Estimez vos impôts, crédits d'impôt et autres calculs financiers pour planifier efficacement.
+              </p>
+              <button className="btn-servitax-outline w-full">Accéder aux calculateurs</button>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6">
+                <Calendar className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-servitax-dark mb-4">Échéancier Fiscal</h3>
+              <p className="text-gray-600 mb-6">
+                Dates clés pour vos obligations fiscales (déclarations revenus, TPS/TVQ, etc.).
+              </p>
+              <button className="btn-servitax-outline w-full">Consulter échéancier</button>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
+                <FileText className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-servitax-dark mb-4">Guides & Formulaires</h3>
+              <p className="text-gray-600 mb-6">
+                Formulaires fiscaux et guides pratiques pour vos déclarations et démarches.
+              </p>
+              <button className="btn-servitax-outline w-full">Télécharger guides</button>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6">
+                <TrendingUp className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-servitax-dark mb-4">Info-Remboursement</h3>
+              <p className="text-gray-600 mb-6">
+                Tenez-vous informé des délais et modalités de remboursement fiscal.
+              </p>
+              <button className="btn-servitax-outline w-full">Suivre remboursement</button>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mb-6">
+                <Phone className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-servitax-dark mb-4">Contacter Gouvernement</h3>
+              <p className="text-gray-600 mb-6">
+                Coordonnées principales agences fiscales et administratives.
+              </p>
+              <button className="btn-servitax-outline w-full">Voir coordonnées</button>
+            </div>
+
+            <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center mb-6">
+                <Award className="h-8 w-8 text-white" />
+              </div>
+              <h3 className="text-xl font-bold text-servitax-dark mb-4">Cours de Fiscalité</h3>
+              <p className="text-gray-600 mb-6">
+                Formation approfondie fiscalité canadienne. <strong>Bientôt disponible.</strong>
+              </p>
+              <button className="btn-servitax-outline w-full opacity-50 cursor-not-allowed">Bientôt disponible</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Advantages Section */}
       <section className="section-padding bg-servitax-light">
         <div className="container-servitax">
