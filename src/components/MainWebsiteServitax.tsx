@@ -78,32 +78,32 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
     {
       icon: Calculator,
       title: 'Centre Pro des Impôts',
-      description: 'Déclarations pour particuliers et travailleurs autonomes, sociétés incorporées et autres formes juridiques.',
-      features: ['Déclarations T1/T2', 'Optimisation fiscale', 'Révision des années antérieures'],
+      description: 'Déclarations pour particuliers et travailleurs autonomes, sociétés incorporées et autres formes juridiques. Révision et ajustement des années antérieures.',
+      features: ['Déclarations T1/T2', 'Révision jusqu\'à 10 ans', 'Représentation gouvernementale', 'Récupération feuillets fiscaux'],
       color: 'from-servitax-primary to-servitax-teal-600',
       link: '/declaration-de-revenu'
     },
     {
       icon: Briefcase,
       title: 'Solutions d\'Affaires',
-      description: 'Tenue de livres, gestion fiscale (TPS-TVQ-HST-PST), gestion de la paie et migration vers le nuage.',
-      features: ['Tenue de livres', 'Gestion fiscale complète', 'Paie automatisée'],
+      description: 'Tenue de livres, gestion fiscale (TPS-TVQ-HST-PST), gestion de la paie et migration vers le nuage. Solutions comptables cloud.',
+      features: ['Tenue de livres QuickBooks', 'Gestion taxes à la consommation', 'Paie optimisée', 'Migration cloud'],
       color: 'from-servitax-secondary to-servitax-cyan-500',
       link: '/entreprises'
     },
     {
       icon: Users,
       title: 'Services Personnalisés',
-      description: 'Services adaptés aux particuliers, familles, étudiants, retraités, nouveaux arrivants et non-résidents.',
-      features: ['Conseil personnalisé', 'Support multilingue', 'Accompagnement complet'],
+      description: 'Services adaptés aux particuliers, familles, étudiants, retraités, nouveaux arrivants, non-résidents et propriétaires locatifs.',
+      features: ['Résidents/Non-résidents', 'Nouveaux arrivants', 'Propriétés locatives', 'Consultation personnalisée'],
       color: 'from-servitax-accent to-servitax-cyan-600',
       link: '/particuliers'
     },
     {
       icon: BookOpen,
-      title: 'Ressources & Formation',
-      description: 'Articles de blogue et ressources utiles basés sur les questions fréquentes de nos clients.',
-      features: ['Base de connaissances', 'Guides pratiques', 'FAQ détaillée'],
+      title: 'Blog & Ressources',
+      description: 'Articles de blogue et ressources utiles basés sur les questions fréquentes de nos clients en comptabilité et fiscalité.',
+      features: ['FAQ comptabilité', 'Guides fiscaux', 'Ressources utiles', 'Conseils personnalisés'],
       color: 'from-servitax-teal-600 to-servitax-primary',
       link: '/ressources-utiles'
     }
