@@ -647,6 +647,17 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
           </div>
         </div>
       </footer>
+
+      {/* Hidden Admin Access - Only visible on double-click or key combination */}
+      <div 
+        className="fixed bottom-4 right-4 opacity-10 hover:opacity-100 transition-opacity duration-500"
+        onDoubleClick={onAdminAccess}
+        title="Double-cliquez pour accès administrateur"
+      >
+        <div className="w-8 h-8 bg-servitax-primary rounded-full flex items-center justify-center cursor-pointer">
+          <ShieldCheck className="h-4 w-4 text-white" />
+        </div>
+      </div>
     </div>
   );
 }
