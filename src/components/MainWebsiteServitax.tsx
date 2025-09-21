@@ -190,10 +190,16 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
 
             {/* CTA Button */}
             <div className="flex items-center space-x-4">
-              <button className="btn-servitax-outline hidden md:block">
+              <button 
+                onClick={onClientLogin}
+                className="btn-servitax-outline hidden md:block"
+              >
                 Client Existant
               </button>
-              <button className="btn-servitax-primary">
+              <button 
+                onClick={onNewClient}
+                className="btn-servitax-primary"
+              >
                 <Sparkles className="h-5 w-5 mr-2" />
                 Commencer
               </button>
