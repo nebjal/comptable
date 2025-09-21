@@ -361,7 +361,7 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
       </section>
 
       {/* Services Section */}
-      <section className="section-padding bg-white">
+      <section id="services" className="section-padding bg-white">
         <div className="container-servitax">
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-4 py-2 bg-servitax-secondary/10 border border-servitax-secondary/20 rounded-full text-servitax-secondary text-sm font-semibold mb-6">
