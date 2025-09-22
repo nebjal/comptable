@@ -32,15 +32,15 @@
 /* Professional Button Styles */
 @layer components {
   .btn-servitax-primary {
-    @apply bg-servitax-primary hover:bg-servitax-teal-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105;
+    @apply bg-servitax-primary hover:bg-servitax-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105;
   }
   
   .btn-servitax-secondary {
-    @apply bg-servitax-secondary hover:bg-servitax-teal-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl;
+    @apply bg-servitax-secondary hover:bg-servitax-green-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl;
   }
   
   .btn-servitax-accent {
-    @apply bg-servitax-accent hover:bg-servitax-cyan-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105;
+    @apply bg-servitax-accent hover:bg-servitax-green-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105;
   }
   
   .btn-servitax-outline {
