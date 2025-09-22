@@ -83,7 +83,8 @@ const Auth = ({ onLogin, onShowClientRegistration, userType = null, onSwitchUser
   };
 
   if (currentStep === 'dashboard') {
-    return selectedType === 'admin' ? <AdminDashboardServitax /> : <ClientDashboardServitax />;
+    // This should not happen as onLogin should be called before reaching this state
+    return null;
   }
 
   return (
