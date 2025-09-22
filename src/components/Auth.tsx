@@ -34,6 +34,9 @@ const Auth = ({ onLogin, onShowClientRegistration, userType = null, onSwitchUser
     if (userType) {
       setSelectedType(userType);
       setCurrentStep('welcome');
+    } else {
+      setSelectedType(null);
+      setCurrentStep('welcome');
     }
   }, [userType]);
 
