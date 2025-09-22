@@ -206,142 +206,51 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
 
   return (
     <div className="min-h-screen bg-servitax-light">
-      {/* Navigation Header - Design Élégant */}
+      {/* Navigation Header - Simple et Élégant */}
       <nav className="nav-servitax fixed top-0 w-full z-50">
         <div className="container-servitax">
-          <div className="flex justify-between items-center h-24">
+          <div className="flex justify-between items-center h-20">
             
-            {/* Logo Section - Élégant */}
+            {/* Logo Simple */}
             <div className="flex items-center">
-              <div className="relative group">
-                <div className="w-14 h-14 bg-white rounded-2xl shadow-xl flex items-center justify-center p-2 transition-all duration-300 group-hover:shadow-2xl group-hover:scale-105">
-                  <img 
-                    src="https://images.squarespace-cdn.com/content/v1/66ef3c957777764cc84b623b/1726954665342-8809OIRJ09Q87W6TF19N/WM2.jpg?format=1500w"
-                    alt="ServitTax Logo"
-                    className="w-full h-full object-contain filter drop-shadow-sm"
-                  />
-                </div>
-                {/* Effet de lueur subtil */}
-                <div className="absolute inset-0 bg-white/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
-              </div>
+              <img 
+                src="https://images.squarespace-cdn.com/content/v1/66ef3c957777764cc84b623b/1726954665342-8809OIRJ09Q87W6TF19N/WM2.jpg?format=1500w"
+                alt="ServitTax"
+                className="h-12 w-auto"
+              />
             </div>
 
-            {/* Navigation Menu - Design Moderne */}
-            <div className="hidden lg:flex items-center">
-              <div className="flex items-center space-x-1 bg-white/10 backdrop-blur-sm rounded-2xl p-2 border border-white/20">
-                {[
-                  { name: 'Accueil', index: 0 },
-                  { name: 'Services', index: 1 },
-                  { name: 'À Propos', index: 2 },
-                  { name: 'Ressources', index: 3 },
-                  { name: 'Contact', index: 4 },
-                  { name: 'Blog', index: 5 },
-                  { name: 'Calculateurs', index: 6 },
-                  { name: 'Échéancier', index: 7 }
-                ].map((item) => (
-                  <button
-                    key={item.name}
-                    onClick={() => scrollToSection(item.index)}
-                    className={`relative px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
-                      currentSection === item.index 
-                        ? 'bg-servitax-secondary text-white shadow-lg' 
-                        : 'text-white/90 hover:text-white hover:bg-white/10'
-                    }`}
-                  >
-                    {item.name}
-                    {currentSection === item.index && (
-                      <div className="absolute inset-0 bg-servitax-secondary rounded-xl animate-pulse opacity-20"></div>
-                    )}
-                  </button>
-                ))}
-              </div>
+            {/* Navigation Simple */}
+            <div className="hidden lg:flex items-center space-x-8">
+              {['Accueil', 'Services', 'À Propos', 'Ressources', 'Contact', 'Blog', 'Calculateurs', 'Échéancier'].map((item, index) => (
+                <button
+                  key={item}
+                  onClick={() => scrollToSection(index)}
+                  className={`text-white/90 hover:text-white font-medium transition-colors duration-300 ${
+                    currentSection === index ? 'text-servitax-secondary' : ''
+                  }`}
+                >
+                  {item}
+                </button>
+              ))}
             </div>
 
-            {/* CTA Buttons - Design Premium */}
-            <div className="flex items-center space-x-3">
+            {/* Boutons Simple */}
+            <div className="flex items-center space-x-4">
               <button 
                 onClick={onClientLogin}
-                className="hidden md:flex items-center px-6 py-3 bg-white/15 backdrop-blur-sm text-white border border-white/30 hover:bg-white/25 font-medium rounded-xl transition-all duration-300 hover:scale-105"
+                className="hidden md:block text-white/90 hover:text-white font-medium transition-colors duration-300"
               >
-                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
                 Client Existant
               </button>
-              
               <button 
                 onClick={onNewClient}
-                className="flex items-center px-6 py-3 bg-gradient-to-r from-servitax-secondary to-servitax-accent text-white font-semibold rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 hover:from-servitax-accent hover:to-servitax-secondary"
+                className="bg-servitax-secondary hover:bg-servitax-green-600 text-white font-medium py-2 px-6 rounded-lg transition-colors duration-300"
               >
-                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
                 Commencer
               </button>
             </div>
-
-            {/* Menu Mobile */}
-            <div className="lg:hidden">
-              <button 
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="p-3 bg-white/15 backdrop-blur-sm text-white rounded-xl border border-white/30 transition-all duration-300 hover:bg-white/25"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              </button>
-            </div>
           </div>
-
-          {/* Menu Mobile Dropdown */}
-          {isMenuOpen && (
-            <div className="lg:hidden absolute top-full left-0 w-full bg-servitax-primary/95 backdrop-blur-xl border-t border-white/10 shadow-2xl">
-              <div className="px-4 py-6 space-y-2">
-                {[
-                  { name: 'Accueil', index: 0 },
-                  { name: 'Services', index: 1 },
-                  { name: 'À Propos', index: 2 },
-                  { name: 'Ressources', index: 3 },
-                  { name: 'Contact', index: 4 },
-                  { name: 'Blog', index: 5 },
-                  { name: 'Calculateurs', index: 6 },
-                  { name: 'Échéancier', index: 7 }
-                ].map((item) => (
-                  <button
-                    key={item.name}
-                    onClick={() => {
-                      scrollToSection(item.index);
-                      setIsMenuOpen(false);
-                    }}
-                    className="w-full text-left px-4 py-3 text-white/90 hover:text-white hover:bg-white/10 rounded-xl transition-all duration-300 font-medium"
-                  >
-                    {item.name}
-                  </button>
-                ))}
-                
-                <div className="border-t border-white/10 pt-4 mt-4 space-y-2">
-                  <button 
-                    onClick={() => {
-                      onClientLogin && onClientLogin();
-                      setIsMenuOpen(false);
-                    }}
-                    className="w-full px-4 py-3 bg-white/15 text-white rounded-xl transition-all duration-300 hover:bg-white/25 font-medium"
-                  >
-                    Client Existant
-                  </button>
-                  <button 
-                    onClick={() => {
-                      onNewClient && onNewClient();
-                      setIsMenuOpen(false);
-                    }}
-                    className="w-full px-4 py-3 bg-gradient-to-r from-servitax-secondary to-servitax-accent text-white rounded-xl transition-all duration-300 font-semibold"
-                  >
-                    Commencer
-                  </button>
-                </div>
-              </div>
-            </div>
-          )}
         </div>
       </nav>
 
