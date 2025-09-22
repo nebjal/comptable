@@ -268,7 +268,7 @@ const ClientDashboardServitax = () => {
                   <div className="text-red-600 text-sm">2 documents manquants</div>
                 </div>
               </div>
-              <button className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors duration-300">
+              <button className="btn-servitax-primary">
                 Voir
               </button>
             </div>
