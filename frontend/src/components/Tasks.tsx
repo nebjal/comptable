@@ -125,7 +125,7 @@ export default function Tasks() {
           <h1 className="text-3xl font-bold text-gray-900">Tâches</h1>
           <p className="text-gray-600 mt-2">Organisez et suivez vos tâches</p>
         </div>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors" onClick={handleAddTask}>
+        <button className="btn-servitax-primary flex items-center space-x-2" onClick={handleAddTask}>
           <Plus className="w-5 h-5" />
           <span>Nouvelle Tâche</span>
         </button>
