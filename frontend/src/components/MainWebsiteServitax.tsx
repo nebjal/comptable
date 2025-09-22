@@ -212,12 +212,12 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-gradient-to-br from-servitax-primary to-servitax-secondary rounded-2xl flex items-center justify-center shadow-lg">
+              <div className="w-12 h-12 bg-gradient-to-br from-servitax-secondary to-servitax-primary rounded-2xl flex items-center justify-center shadow-lg">
                 <Shield className="h-7 w-7 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-servitax-dark">ServitTax</h1>
-                <p className="text-sm text-servitax-primary font-medium">Centre Pro des Impôts</p>
+                <h1 className="text-2xl font-bold text-white">ServitTax</h1>
+                <p className="text-sm text-servitax-secondary font-medium">Centre Pro des Impôts</p>
               </div>
             </div>
 
@@ -229,8 +229,8 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
                   onClick={() => scrollToSection(index)}
                   className={`nav-item-servitax px-4 py-2 rounded-lg transition-all duration-300 ${
                     currentSection === index 
-                      ? 'active bg-servitax-primary text-white' 
-                      : 'text-servitax-dark hover:bg-servitax-primary/10 hover:text-servitax-primary'
+                      ? 'active bg-servitax-secondary text-servitax-primary' 
+                      : 'text-white/90 hover:bg-white/10 hover:text-white'
                   }`}
                 >
                   {item}
@@ -242,13 +242,13 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
             <div className="flex items-center space-x-4">
               <button 
                 onClick={onClientLogin}
-                className="btn-servitax-outline hidden md:block"
+                className="bg-white/10 text-white border border-white/20 hover:bg-white/20 font-semibold py-3 px-6 rounded-xl transition-all duration-300 hidden md:block"
               >
                 Client Existant
               </button>
               <button 
                 onClick={onNewClient}
-                className="btn-servitax-primary"
+                className="bg-servitax-secondary hover:bg-servitax-green-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
               >
                 <Sparkles className="h-5 w-5 mr-2" />
                 Commencer
