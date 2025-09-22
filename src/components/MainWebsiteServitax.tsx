@@ -35,6 +35,11 @@ import {
   Send
 } from 'lucide-react';
 
+// Import new sections
+import BlogSection from './BlogSection';
+import CalculatorsSection from './CalculatorsSection';
+import FiscalCalendarSection from './FiscalCalendarSection';
+
 interface MainWebsiteServitaxProps {
   onClientLogin?: () => void;
   onNewClient?: () => void;
