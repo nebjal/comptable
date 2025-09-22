@@ -319,7 +319,7 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
       </nav>
 
       {/* Hero Section - Accueil */}
-      <section id="accueil" className="hero-servitax section-padding pt-28">
+      <section id="accueil" className="hero-servitax section-padding pt-24">
         <div className="container-servitax">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Hero Content */}
