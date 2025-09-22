@@ -361,6 +361,11 @@
   color: white;
 }
 
+/* Professional spacing utilities */
+.section-padding {
+  @apply py-20 px-4 sm:px-6 lg:px-8;
+}
+
 .container-servitax {
   @apply max-w-7xl mx-auto;
 }
