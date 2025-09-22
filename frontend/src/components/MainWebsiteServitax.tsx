@@ -211,17 +211,19 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex justify-between items-center h-20">
             
-            {/* Logo Premium */}
+            {/* Logo Premium VISIBLE */}
             <div className="flex items-center group">
               <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-500 rounded-2xl blur-lg opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
-                <div className="relative h-12 w-auto bg-white rounded-xl shadow-2xl p-2 group-hover:scale-105 transition-transform duration-300">
+                <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-500 rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+                <div className="relative h-14 w-20 bg-white rounded-xl shadow-2xl p-2 group-hover:scale-105 transition-transform duration-300 border-2 border-green-400/20">
                   <img 
                     src="https://images.squarespace-cdn.com/content/v1/66ef3c957777764cc84b623b/1726954665342-8809OIRJ09Q87W6TF19N/WM2.jpg?format=1500w"
                     alt="ServitTax"
-                    className="h-full w-auto object-contain"
+                    className="h-full w-full object-contain filter contrast-125 brightness-110"
                   />
                 </div>
+                {/* Badge premium */}
+                <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full animate-pulse shadow-lg"></div>
               </div>
             </div>
 
