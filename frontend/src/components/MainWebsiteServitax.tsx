@@ -265,22 +265,21 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
             {/* Hero Content */}
             <div className="space-y-8 hero-content">
               <div className="space-y-6">
-                <div className="hero-badge inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold">
-                  <div className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></div>
+                <div className="hero-badge inline-flex items-center px-4 py-2 bg-servitax-primary/10 border border-servitax-primary/20 rounded-full text-servitax-primary text-sm font-semibold">
+                  <div className="w-2 h-2 bg-servitax-accent rounded-full mr-2 animate-pulse"></div>
                   Centre Professionnel des Impôts
                 </div>
 
-                <h1 className="text-5xl lg:text-6xl font-black leading-tight">
+                <h1 className="text-5xl lg:text-6xl font-black leading-tight text-servitax-dark">
                   Votre Centre Pro des{' '}
-                  <span className="text-white drop-shadow-lg">Impôts</span>
+                  <span className="text-gradient-servitax">Impôts</span>
                 </h1>
 
-                <p className="text-xl leading-relaxed max-w-2xl">
-                  Services fiscaux et comptables en ligne, accessibles partout au Canada. 
-                  <span className="font-semibold"> Excellence professionnelle</span>, 
-                  <span className="font-semibold"> prix compétitifs</span> et 
-                  <span className="font-semibold"> sécurité des données</span>.
-                  Adoption technologique et environnements sans papier.
+                <p className="text-xl text-gray-700 leading-relaxed max-w-2xl">
+                  Services d'impôts et de comptabilité en ligne, accessibles partout au Canada. 
+                  <span className="font-semibold text-servitax-primary"> Excellence professionnelle</span>, 
+                  <span className="font-semibold text-servitax-secondary"> prix compétitifs</span> et 
+                  <span className="font-semibold text-servitax-accent"> sécurité des données</span>.
                 </p>
               </div>
 
