@@ -13,7 +13,7 @@ import {
   Home
 } from 'lucide-react';
 
-const CalculatorsSection = () => {
+const CalculatorsSection = ({ onCalculatorClick }: { onCalculatorClick?: (calculatorId: string) => void }) => {
   const calculatorCategories = [
     {
       title: 'Général',
