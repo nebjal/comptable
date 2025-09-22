@@ -8,17 +8,17 @@
 /* ServitTax Professional Theme - Clean and Modern */
 @layer base {
   :root {
-    /* ServitTax Color Variables */
-    --servitax-primary: #00796b;      /* Deep teal */
-    --servitax-secondary: #4db6ac;    /* Light teal */
-    --servitax-accent: #00bcd4;       /* Bright cyan */
-    --servitax-dark: #263238;         /* Dark slate */
+    /* ServitTax Color Variables - Nouvelle palette personnalisée */
+    --servitax-primary: #414a57;      /* Nouveau bleu principal */
+    --servitax-secondary: #6abe5e;    /* Nouveau vert obligatoire */
+    --servitax-accent: #6abe5e;       /* Accent vert */
+    --servitax-dark: #2d3748;         /* Dark slate */
     --servitax-light: #f8fafc;        /* Ultra-light gray */
     
-    /* Professional gradients */
-    --gradient-primary: linear-gradient(135deg, #00796b 0%, #4db6ac 100%);
-    --gradient-accent: linear-gradient(135deg, #00bcd4 0%, #26c6da 100%);
-    --gradient-dark: linear-gradient(135deg, #263238 0%, #37474f 100%);
+    /* Professional gradients avec nouvelles couleurs */
+    --gradient-primary: linear-gradient(135deg, #414a57 0%, #6abe5e 100%);
+    --gradient-accent: linear-gradient(135deg, #6abe5e 0%, #5ca856 100%);
+    --gradient-dark: linear-gradient(135deg, #2d3748 0%, #414a57 100%);
   }
   
   body {
