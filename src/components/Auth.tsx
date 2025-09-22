@@ -49,7 +49,7 @@ const Auth = ({ onLogin, onShowClientRegistration, userType = null, onSwitchUser
     if (selectedType === 'admin' && credentials.email.includes('admin')) {
       setCurrentStep('twofa');
     } else if (selectedType === 'client') {
-      setCurrentStep('dashboard');
+      setCurrentStep('twofa');
     } else {
       setCurrentStep('twofa');
     }
@@ -57,7 +57,28 @@ const Auth = ({ onLogin, onShowClientRegistration, userType = null, onSwitchUser
 
   const handleTwoFa = () => {
     if (credentials.twoFaCode === '123456') {
-      setCurrentStep('dashboard');
+      // Prepare user data based on type
+      let userData = null;
+      if (selectedType === 'admin') {
+        userData = {
+          id: 'admin1',
+          email: credentials.email || 'admin@comptable.com',
+          nom: 'Administrateur',
+          prenom: 'Principal',
+          role: 'admin'
+        };
+      } else if (selectedType === 'client') {
+        userData = {
+          id: 'client1',
+          email: credentials.email || 'client@exemple.com',
+          nom: 'Client',
+          prenom: 'Test',
+          role: 'client'
+        };
+      }
+      
+      // Call the onLogin function from props
+      onLogin(selectedType === 'admin' ? 'admin' : 'client', userData);
     }
   };
 
