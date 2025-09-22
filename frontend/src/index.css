@@ -216,7 +216,7 @@
 
 .hover-servitax:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0, 121, 107, 0.15);
+  box-shadow: 0 20px 40px rgba(65, 74, 87, 0.15);
 }
 
 /* Custom Professional Scrollbar */
