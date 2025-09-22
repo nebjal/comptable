@@ -4,13 +4,26 @@ export default {
   theme: {
     extend: {
       colors: {
-        // ServitTax Professional Color Palette - Nouvelle palette personnalisée
+        // ServitTax Palette Authentique - basée sur servitax.ca
         'servitax': {
-          'primary': '#414a57',      // Nouveau bleu principal
-          'secondary': '#6abe5e',    // Nouveau vert obligatoire  
-          'accent': '#6abe5e',       // Accent vert
-          'dark': '#2d3748',         // Dark slate - text
-          'light': '#f8fafc',        // Ultra-light gray - backgrounds
+          'primary': '#414a57',      // Bleu foncé menu (comme demandé)
+          'secondary': '#4CAF50',    // Vert ServitTax authentique pour boutons
+          'accent': '#66BB6A',       // Vert clair pour hover/accents
+          'success': '#4CAF50',      // Vert pour succès
+          'dark': '#2d3748',         // Texte foncé
+          'light': '#f8fafc',        // Arrière-plans clairs
+          'green': {
+            50: '#f0fdf4',
+            100: '#dcfce7',
+            200: '#bbf7d0',
+            300: '#86efac',
+            400: '#66BB6A',
+            500: '#4CAF50',
+            600: '#43A047',
+            700: '#388E3C',
+            800: '#2E7D32',
+            900: '#1B5E20',
+          },
           'blue': {
             50: '#f7f8fa',
             100: '#eef0f4', 
@@ -22,18 +35,6 @@ export default {
             700: '#2f353d',
             800: '#262b33',
             900: '#1f2328',
-          },
-          'green': {
-            50: '#f0fdf4',
-            100: '#dcfce7',
-            200: '#bbf7d0',
-            300: '#86efac',
-            400: '#6abe5e',
-            500: '#6abe5e',
-            600: '#5ca856',
-            700: '#4f914c',
-            800: '#427a42',
-            900: '#365638',
           },
           // Garde les anciennes couleurs pour compatibilité
           'teal': {
