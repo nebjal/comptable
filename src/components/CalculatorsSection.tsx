@@ -242,7 +242,7 @@ const CalculatorsSection = ({ onCalculatorClick }: { onCalculatorClick?: (calcul
                         <ExternalLink className="h-4 w-4" />
                       </a>
                     </div>
-                  </a>
+                  </div>
                 ))}
               </div>
             </div>
