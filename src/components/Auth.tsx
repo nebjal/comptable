@@ -217,7 +217,10 @@ const Auth = ({ onLogin, onShowClientRegistration, userType = null, onSwitchUser
                 </button>
 
                 <button
-                  onClick={() => onSwitchUserType && onSwitchUserType(null as any)}
+                  onClick={() => {
+                    setSelectedType(null);
+                    setCurrentStep('welcome');
+                  }}
                   className="w-full py-3 text-gray-600 hover:text-servitax-primary transition-colors duration-300"
                 >
                   ← Changer de type d'accès
