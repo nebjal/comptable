@@ -16,8 +16,6 @@ import {
   Globe,
   Sparkles
 } from 'lucide-react';
-import AdminDashboardServitax from './AdminDashboardServitax';
-import ClientDashboardServitax from './ClientDashboardServitax';
 
 interface AuthProps {
   onLogin: (role: string, userData?: any) => void;
