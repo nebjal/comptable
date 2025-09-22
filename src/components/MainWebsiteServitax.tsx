@@ -35,10 +35,12 @@ import {
   Send
 } from 'lucide-react';
 
-// Import new sections
+// Import new sections and pages
 import BlogSection from './BlogSection';
 import CalculatorsSection from './CalculatorsSection';
 import FiscalCalendarSection from './FiscalCalendarSection';
+import BlogArticlePage from './BlogArticlePage';
+import CalculatorDetailPage from './CalculatorDetailPage';
 
 interface MainWebsiteServitaxProps {
   onClientLogin?: () => void;
