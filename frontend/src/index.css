@@ -252,12 +252,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #414a57 0%, #6abe5e 100%);
+  background: linear-gradient(135deg, #414a57 0%, #4CAF50 100%);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #414a57 0%, #5ca856 100%);
+  background: linear-gradient(135deg, #414a57 0%, #388E3C 100%);
 }
 
 /* Smooth transitions for professional feel */
