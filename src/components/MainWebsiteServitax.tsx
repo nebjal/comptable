@@ -51,6 +51,9 @@ interface MainWebsiteServitaxProps {
 export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdminAccess }: MainWebsiteServitaxProps) {
   const [currentSection, setCurrentSection] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentView, setCurrentView] = useState('main'); // main, blog-article, calculator-detail
+  const [selectedBlogId, setSelectedBlogId] = useState<string | null>(null);
+  const [selectedCalculatorId, setSelectedCalculatorId] = useState<string | null>(null);
 
   // Navigation vers les sections
   const scrollToSection = (sectionIndex: number) => {
@@ -61,6 +64,32 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  // Gestion des vues détaillées
+  const handleBlogArticleClick = (articleId: string) => {
+    setSelectedBlogId(articleId);
+    setCurrentView('blog-article');
+  };
+
+  const handleCalculatorClick = (calculatorId: string) => {
+    setSelectedCalculatorId(calculatorId);
+    setCurrentView('calculator-detail');
+  };
+
+  const handleBackToMain = () => {
+    setCurrentView('main');
+    setSelectedBlogId(null);
+    setSelectedCalculatorId(null);
+  };
+
+  // Render different views
+  if (currentView === 'blog-article') {
+    return <BlogArticlePage articleId={selectedBlogId || '1'} onBack={handleBackToMain} />;
+  }
+
+  if (currentView === 'calculator-detail') {
+    return <CalculatorDetailPage calculatorId={selectedCalculatorId || 'reer'} onBack={handleBackToMain} />;
+  }
 
   // Animation des compteurs
   const [counters, setCounters] = useState({
