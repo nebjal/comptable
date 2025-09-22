@@ -30,22 +30,43 @@
   }
 }
 
-/* Professional Button Styles */
+/* Professional Button Styles - Palette ServitTax Authentique */
 @layer components {
   .btn-servitax-primary {
-    @apply bg-servitax-primary hover:bg-servitax-blue-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105;
+    @apply bg-servitax-secondary hover:bg-servitax-green-700 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105;
+    background-color: #4CAF50;
+  }
+  
+  .btn-servitax-primary:hover {
+    background-color: #388E3C;
   }
   
   .btn-servitax-secondary {
-    @apply bg-servitax-secondary hover:bg-servitax-green-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl;
+    @apply bg-servitax-accent hover:bg-servitax-green-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl;
+    background-color: #66BB6A;
+  }
+  
+  .btn-servitax-secondary:hover {
+    background-color: #43A047;
   }
   
   .btn-servitax-accent {
-    @apply bg-servitax-accent hover:bg-servitax-green-600 text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105;
+    @apply text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105;
+    background-color: #4CAF50;
+  }
+  
+  .btn-servitax-accent:hover {
+    background-color: #388E3C;
   }
   
   .btn-servitax-outline {
-    @apply border-2 border-servitax-primary text-servitax-primary hover:bg-servitax-primary hover:text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300;
+    @apply border-2 text-servitax-secondary hover:bg-servitax-secondary hover:text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300;
+    border-color: #4CAF50;
+    color: #4CAF50;
+  }
+  
+  .btn-servitax-outline:hover {
+    background-color: #4CAF50;
   }
 }
 
