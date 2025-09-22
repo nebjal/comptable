@@ -211,17 +211,13 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
         <div className="container-servitax">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 rounded-2xl overflow-hidden shadow-lg">
+            <div className="flex items-center">
+              <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-lg bg-white p-2">
                 <img 
                   src="https://images.squarespace-cdn.com/content/v1/66ef3c957777764cc84b623b/1726954665342-8809OIRJ09Q87W6TF19N/WM2.jpg?format=1500w"
                   alt="ServitTax Logo"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
-              </div>
-              <div>
-                <h1 className="text-2xl font-bold text-white">ServitTax</h1>
-                <p className="text-sm text-servitax-secondary font-medium">Centre Pro des Impôts</p>
               </div>
             </div>
 
