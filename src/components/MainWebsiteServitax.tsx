@@ -53,7 +53,7 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
   // Navigation vers les sections
   const scrollToSection = (sectionIndex: number) => {
     setCurrentSection(sectionIndex);
-    const sectionIds = ['accueil', 'services', 'apropos', 'ressources', 'contact'];
+    const sectionIds = ['accueil', 'services', 'apropos', 'ressources', 'contact', 'blog', 'calculateurs', 'echeancier'];
     const element = document.getElementById(sectionIds[sectionIndex]);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
