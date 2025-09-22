@@ -298,7 +298,7 @@
 /* Professional section dividers */
 .section-divider {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0, 121, 107, 0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(65, 74, 87, 0.2), transparent);
   margin: 4rem 0;
 }
 
