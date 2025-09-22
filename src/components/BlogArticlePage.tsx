@@ -15,7 +15,8 @@ import {
   Calculator,
   FileText,
   Target,
-  TrendingUp
+  TrendingUp,
+  X
 } from 'lucide-react';
 
 interface BlogArticlePageProps {
