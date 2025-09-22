@@ -10,7 +10,7 @@ import {
   Tag
 } from 'lucide-react';
 
-const BlogSection = () => {
+const BlogSection = ({ onArticleClick }: { onArticleClick?: (articleId: string) => void }) => {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [searchTerm, setSearchTerm] = useState('');
 
