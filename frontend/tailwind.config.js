@@ -4,25 +4,38 @@ export default {
   theme: {
     extend: {
       colors: {
-        // ServitTax Professional Color Palette - Modern and Clean
+        // ServitTax Professional Color Palette - Nouvelle palette personnalisée
         'servitax': {
-          'primary': '#00796b',      // Deep teal - primary color
-          'secondary': '#4db6ac',    // Light teal - secondary elements  
-          'accent': '#00bcd4',       // Bright cyan - call-to-action
-          'dark': '#263238',         // Dark slate - text
+          'primary': '#414a57',      // Nouveau bleu principal
+          'secondary': '#6abe5e',    // Nouveau vert obligatoire  
+          'accent': '#6abe5e',       // Accent vert
+          'dark': '#2d3748',         // Dark slate - text
           'light': '#f8fafc',        // Ultra-light gray - backgrounds
           'blue': {
-            50: '#eff6ff',
-            100: '#dbeafe', 
-            200: '#bfdbfe',
-            300: '#93c5fd',
-            400: '#60a5fa',
-            500: '#3b82f6',
-            600: '#2563eb',
-            700: '#1d4ed8',
-            800: '#1e40af',
-            900: '#1e3a8a',
+            50: '#f7f8fa',
+            100: '#eef0f4', 
+            200: '#dde2ea',
+            300: '#c4cddb',
+            400: '#a6b4c8',
+            500: '#414a57',
+            600: '#394048',
+            700: '#2f353d',
+            800: '#262b33',
+            900: '#1f2328',
           },
+          'green': {
+            50: '#f0fdf4',
+            100: '#dcfce7',
+            200: '#bbf7d0',
+            300: '#86efac',
+            400: '#6abe5e',
+            500: '#6abe5e',
+            600: '#5ca856',
+            700: '#4f914c',
+            800: '#427a42',
+            900: '#365638',
+          },
+          // Garde les anciennes couleurs pour compatibilité
           'teal': {
             50: '#f0fdfa',
             100: '#ccfbf1',
