@@ -279,9 +279,9 @@
   border-radius: 1px;
 }
 
-/* Professional hero section styles avec nouvel arrière-plan */
+/* Professional hero section styles - ServitTax authentique */
 .hero-servitax {
-  background: linear-gradient(135deg, #6abe5e 0%, #5ca856 100%);
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
   position: relative;
   overflow: hidden;
 }
@@ -294,8 +294,8 @@
   right: 0;
   bottom: 0;
   background: 
-    linear-gradient(135deg, rgba(106, 190, 94, 0.8) 0%, rgba(92, 168, 86, 0.9) 100%),
-    url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxvZmZpY2V8ZW58MHx8fHwxNzU4NTAzODQ5fDA&ixlib=rb-4.1.0&q=85') center/cover;
+    linear-gradient(135deg, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 0.95) 100%),
+    url('https://images.squarespace-cdn.com/content/v1/66ef3c957777764cc84b623b/1726954651440-1PCW55QEE4260VZ1FIC9/iStock-1759999680+%281%29.jpg') center/cover;
   pointer-events: none;
 }
 
@@ -307,8 +307,8 @@
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 20% 80%, rgba(65, 74, 87, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(65, 74, 87, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.3) 0%, transparent 50%);
   pointer-events: none;
 }
 
