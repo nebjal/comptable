@@ -222,22 +222,29 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
               </div>
             </div>
 
-            {/* Navigation Épurée */}
+            {/* Navigation Épurée - Ordre selon la page */}
             <div className="hidden lg:flex items-center space-x-8">
               {[
-                'Accueil', 'Services', 'À Propos', 'Ressources', 'Contact', 'Blog', 'Calculateurs', 'Échéancier'
-              ].map((item, index) => (
+                { name: 'Accueil', index: 0 },
+                { name: 'Services', index: 1 },
+                { name: 'À Propos', index: 2 },
+                { name: 'Ressources', index: 3 },
+                { name: 'Contact', index: 4 },
+                { name: 'Blog', index: 5 },
+                { name: 'Calculateurs', index: 6 },
+                { name: 'Échéancier', index: 7 }
+              ].map((item) => (
                 <button
-                  key={item}
-                  onClick={() => scrollToSection(index)}
+                  key={item.name}
+                  onClick={() => scrollToSection(item.index)}
                   className={`text-sm font-medium transition-colors duration-200 relative ${
-                    currentSection === index 
+                    currentSection === item.index 
                       ? 'text-green-600' 
                       : 'text-gray-700 hover:text-green-600'
                   }`}
                 >
-                  {item}
-                  {currentSection === index && (
+                  {item.name}
+                  {currentSection === item.index && (
                     <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-green-600 rounded-full"></div>
                   )}
                 </button>
