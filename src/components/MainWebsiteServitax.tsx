@@ -928,10 +928,10 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
       </section>
 
       {/* Blog Section */}
-      <BlogSection />
+      <BlogSection onArticleClick={handleBlogArticleClick} />
 
       {/* Calculators Section */}
-      <CalculatorsSection />
+      <CalculatorsSection onCalculatorClick={handleCalculatorClick} />
 
       {/* Fiscal Calendar Section */}
       <FiscalCalendarSection />
