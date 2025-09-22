@@ -192,7 +192,7 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
 
             {/* Navigation Menu */}
             <div className="hidden lg:flex items-center space-x-8">
-              {['Accueil', 'Services', 'À Propos', 'Ressources', 'Contact'].map((item, index) => (
+              {['Accueil', 'Services', 'À Propos', 'Ressources', 'Contact', 'Blog', 'Calculateurs', 'Échéancier'].map((item, index) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(index)}
