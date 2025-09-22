@@ -317,9 +317,48 @@
   margin: 4rem 0;
 }
 
-/* Professional spacing utilities */
-.section-padding {
-  @apply py-20 px-4 sm:px-6 lg:px-8;
+/* Professional section styles avec arrière-plans d'images */
+.section-with-bg-1 {
+  background: 
+    linear-gradient(135deg, rgba(248, 250, 252, 0.95) 0%, rgba(241, 245, 249, 0.95) 100%),
+    url('https://images.unsplash.com/photo-1568992687947-868a62a9f521?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwzfHxvZmZpY2V8ZW58MHx8fHwxNzU4NTAzODQ5fDA&ixlib=rb-4.1.0&q=85') center/cover;
+  position: relative;
+}
+
+.section-with-bg-2 {
+  background: 
+    linear-gradient(135deg, rgba(106, 190, 94, 0.05) 0%, rgba(92, 168, 86, 0.05) 100%),
+    url('https://images.pexels.com/photos/6694570/pexels-photo-6694570.jpeg') center/cover;
+  position: relative;
+}
+
+.section-content-overlay {
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero content avec meilleur contraste */
+.hero-content {
+  position: relative;
+  z-index: 3;
+  color: white;
+}
+
+.hero-content h1 {
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content p {
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.hero-badge {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
 }
 
 .container-servitax {
