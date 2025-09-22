@@ -20,11 +20,13 @@ import AdminDashboardServitax from './AdminDashboardServitax';
 import ClientDashboardServitax from './ClientDashboardServitax';
 
 interface AuthProps {
-  userType: 'admin' | 'client';
-  onBack: () => void;
+  onLogin: (role: string, userData?: any) => void;
+  onShowClientRegistration?: () => void;
+  userType?: 'admin' | 'client' | null;
+  onSwitchUserType?: (type: 'admin' | 'client') => void;
 }
 
-const Auth = ({ userType, onBack }: AuthProps) => {
+const Auth = ({ onLogin, onShowClientRegistration, userType = null, onSwitchUserType }: AuthProps) => {
   const [currentStep, setCurrentStep] = useState('welcome'); // welcome, login, twofa, dashboard
   const [selectedType, setSelectedType] = useState<'admin' | 'client' | null>(null);
   const [showPassword, setShowPassword] = useState(false);
