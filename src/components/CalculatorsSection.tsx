@@ -228,9 +228,22 @@ const CalculatorsSection = ({ onCalculatorClick }: { onCalculatorClick?: (calcul
                       {calculator.description}
                     </p>
                     
-                    <div className="inline-flex items-center text-servitax-primary font-semibold text-sm group-hover:text-servitax-secondary transition-colors duration-300">
-                      Utiliser le calculateur
-                      <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+                    <div className="flex space-x-2">
+                      <button
+                        onClick={() => onCalculatorClick?.(calculator.name.toLowerCase().replace(/\s+/g, '-'))}
+                        className="flex-1 inline-flex items-center justify-center text-servitax-primary font-semibold text-sm group-hover:text-servitax-secondary transition-colors duration-300 bg-servitax-primary/10 hover:bg-servitax-primary/20 px-3 py-2 rounded-lg"
+                      >
+                        Utiliser
+                        <ArrowRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
+                      </button>
+                      <a
+                        href={calculator.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center text-gray-600 hover:text-servitax-primary transition-colors duration-300 px-3 py-2 rounded-lg hover:bg-gray-100"
+                      >
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
                     </div>
                   </a>
                 ))}
