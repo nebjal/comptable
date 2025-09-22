@@ -220,7 +220,7 @@ export default function Clients({ newClients = [], onAddClient }: ClientsProps) 
     <div className="space-y-6">
       {/* Actions Rapides */}
       <div className="flex flex-wrap gap-4 mb-8 items-center justify-center">
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-lg flex items-center space-x-2 text-lg font-semibold shadow transition-colors" onClick={handleNew}>
+        <button className="btn-servitax-primary flex items-center space-x-2 text-lg font-semibold shadow" onClick={handleNew}>
           <Plus className="w-5 h-5" />
           <span>Nouveau Client</span>
         </button>
