@@ -896,6 +896,15 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
         </div>
       </section>
 
+      {/* Blog Section */}
+      <BlogSection />
+
+      {/* Calculators Section */}
+      <CalculatorsSection />
+
+      {/* Fiscal Calendar Section */}
+      <FiscalCalendarSection />
+
       {/* Contact Section */}
       <section id="contact" className="section-padding bg-white">
         <div className="container-servitax">
