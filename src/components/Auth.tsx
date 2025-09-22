@@ -216,6 +216,20 @@ const Auth = ({ onLogin, onShowClientRegistration, userType = null, onSwitchUser
                   Accéder à mon espace {selectedType === 'admin' ? 'administrateur' : 'client'}
                 </button>
 
+                {selectedType === 'client' && onShowClientRegistration && (
+                  <div className="text-center">
+                    <p className="text-gray-600 text-sm mb-3">
+                      Nouveau client ?
+                    </p>
+                    <button
+                      onClick={onShowClientRegistration}
+                      className="text-servitax-primary hover:text-servitax-secondary font-semibold transition-colors duration-300"
+                    >
+                      Créer mon dossier client
+                    </button>
+                  </div>
+                )}
+
                 <button
                   onClick={() => {
                     setSelectedType(null);
