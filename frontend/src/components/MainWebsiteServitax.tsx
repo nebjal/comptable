@@ -263,35 +263,38 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
         <div className="container-servitax">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Hero Content */}
-            <div className="space-y-8">
+            <div className="space-y-8 hero-content">
               <div className="space-y-6">
-                <div className="inline-flex items-center px-4 py-2 bg-servitax-primary/10 border border-servitax-primary/20 rounded-full text-servitax-primary text-sm font-semibold">
-                  <div className="w-2 h-2 bg-servitax-accent rounded-full mr-2 animate-pulse"></div>
+                <div className="hero-badge inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold">
+                  <div className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></div>
                   Centre Professionnel des Impôts
                 </div>
 
-                <h1 className="text-5xl lg:text-6xl font-black leading-tight text-servitax-dark">
+                <h1 className="text-5xl lg:text-6xl font-black leading-tight">
                   Votre Centre Pro des{' '}
-                  <span className="text-gradient-servitax">Impôts</span>
+                  <span className="text-white drop-shadow-lg">Impôts</span>
                 </h1>
 
-                <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
+                <p className="text-xl leading-relaxed max-w-2xl">
                   Services fiscaux et comptables en ligne, accessibles partout au Canada. 
-                  <span className="font-semibold text-servitax-primary"> Excellence professionnelle</span>, 
-                  <span className="font-semibold text-servitax-secondary"> prix compétitifs</span> et 
-                  <span className="font-semibold text-servitax-accent"> sécurité des données</span>.
+                  <span className="font-semibold"> Excellence professionnelle</span>, 
+                  <span className="font-semibold"> prix compétitifs</span> et 
+                  <span className="font-semibold"> sécurité des données</span>.
                   Adoption technologique et environnements sans papier.
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-6">
-                <button className="btn-servitax-primary text-lg px-8 py-4">
+                <button 
+                  onClick={onNewClient}
+                  className="bg-servitax-primary hover:bg-servitax-blue-700 text-white font-semibold text-lg px-8 py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                >
                   <Play className="h-6 w-6 mr-3" />
                   Commencer maintenant!
                   <ArrowRight className="h-6 w-6 ml-3" />
                 </button>
 
-                <button className="btn-servitax-outline text-lg px-8 py-4">
+                <button className="bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white/30 font-semibold text-lg px-8 py-4 rounded-xl transition-all duration-300">
                   <Calendar className="h-6 w-6 mr-3" />
                   Consultation gratuite
                 </button>
