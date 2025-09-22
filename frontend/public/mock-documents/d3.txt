@@ -1,0 +1,47 @@
+# BULLETIN DE PAIE
+# Employé #001 - Juillet 2025
+
+**EMPLOYEUR:** Services GHI
+**EMPLOYÉ:** Jean Dupont
+**NUMÉRO:** EMP-001
+**PÉRIODE:** 1er au 31 juillet 2025
+
+## INFORMATIONS PERSONNELLES
+- **Nom:** Jean Dupont
+- **Adresse:** 123 Rue Principale, Montréal, QC
+- **Numéro d'assurance sociale:** 123 456 789
+- **Taux horaire:** 25.00 $/heure
+- **Statut:** Temps plein
+
+## HEURES TRAVAILLÉES
+- **Heures régulières:** 160 heures
+- **Heures supplémentaires:** 12 heures (1.5x)
+- **Total heures:** 172 heures
+
+## RÉMUNÉRATION
+### Salaire de base
+- Heures régulières (160h × 25.00 $): 4,000.00 $
+- Heures supplémentaires (12h × 37.50 $): 450.00 $
+- **Sous-total salaire:** 4,450.00 $
+
+### Déductions
+- **Assurance emploi (1.63%):** 72.54 $
+- **Régime de pensions du Canada (5.95%):** 264.73 $
+- **Impôt fédéral (15%):** 667.50 $
+- **Impôt provincial (16%):** 712.00 $
+- **Assurance maladie (1%):** 44.50 $
+- **Syndicat:** 50.00 $
+
+**Total déductions:** 1,811.27 $
+
+## PAIEMENT NET
+**Salaire brut:** 4,450.00 $
+**Déductions:** 1,811.27 $
+**Paiement net:** 2,638.73 $
+
+## MODE DE PAIEMENT
+- **Banque:** Banque Nationale
+- **Numéro de compte:** 98765-432-109
+- **Date de dépôt:** 15 août 2025
+
+*Ce bulletin de paie est confidentiel et destiné uniquement à l'employé*
