@@ -206,140 +206,110 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
 
   return (
     <div className="min-h-screen bg-servitax-light">
-      {/* Navigation Header - Design Premium Moderne */}
-      <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-slate-900/95 via-slate-800/95 to-slate-900/95 backdrop-blur-xl border-b border-white/10 shadow-2xl">
+      {/* Navigation Header - Design Épuré et Beau */}
+      <nav className="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-xl border-b border-gray-100 shadow-sm">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex justify-between items-center h-20">
+          <div className="flex justify-between items-center h-18">
             
-            {/* Logo Premium VISIBLE */}
-            <div className="flex items-center group">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-500 rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
-                <div className="relative h-14 w-20 bg-white rounded-xl shadow-2xl p-2 group-hover:scale-105 transition-transform duration-300 border-2 border-green-400/20">
-                  <img 
-                    src="https://images.squarespace-cdn.com/content/v1/66ef3c957777764cc84b623b/1726954665342-8809OIRJ09Q87W6TF19N/WM2.jpg?format=1500w"
-                    alt="ServitTax"
-                    className="h-full w-full object-contain filter contrast-125 brightness-110"
-                  />
-                </div>
-                {/* Badge premium */}
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-green-500 rounded-full animate-pulse shadow-lg"></div>
+            {/* Logo Épuré */}
+            <div className="flex items-center">
+              <div className="h-10 w-auto">
+                <img 
+                  src="https://images.squarespace-cdn.com/content/v1/66ef3c957777764cc84b623b/1726954665342-8809OIRJ09Q87W6TF19N/WM2.jpg?format=1500w"
+                  alt="ServitTax"
+                  className="h-full w-auto object-contain"
+                />
               </div>
             </div>
 
-            {/* Navigation Moderne avec Glass Effect */}
-            <div className="hidden lg:flex items-center">
-              <div className="flex items-center space-x-1 bg-white/5 backdrop-blur-2xl rounded-2xl p-1.5 border border-white/10 shadow-xl">
-                {[
-                  { name: 'Accueil', index: 0, icon: '🏠' },
-                  { name: 'Services', index: 1, icon: '⚡' },
-                  { name: 'À Propos', index: 2, icon: '💼' },
-                  { name: 'Ressources', index: 3, icon: '📚' },
-                  { name: 'Contact', index: 4, icon: '📞' },
-                  { name: 'Blog', index: 5, icon: '📝' },
-                  { name: 'Calculateurs', index: 6, icon: '🧮' },
-                  { name: 'Échéancier', index: 7, icon: '📅' }
-                ].map((item) => (
-                  <button
-                    key={item.name}
-                    onClick={() => scrollToSection(item.index)}
-                    className={`relative px-4 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 flex items-center space-x-2 ${
-                      currentSection === item.index 
-                        ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white shadow-lg scale-105' 
-                        : 'text-white/80 hover:text-white hover:bg-white/10 hover:scale-105'
-                    }`}
-                  >
-                    <span className="text-xs">{item.icon}</span>
-                    <span>{item.name}</span>
-                    {currentSection === item.index && (
-                      <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-400 rounded-xl opacity-20 animate-pulse"></div>
-                    )}
-                  </button>
-                ))}
-              </div>
+            {/* Navigation Épurée */}
+            <div className="hidden lg:flex items-center space-x-8">
+              {[
+                'Accueil', 'Services', 'À Propos', 'Ressources', 'Contact', 'Blog', 'Calculateurs', 'Échéancier'
+              ].map((item, index) => (
+                <button
+                  key={item}
+                  onClick={() => scrollToSection(index)}
+                  className={`text-sm font-medium transition-colors duration-200 relative ${
+                    currentSection === index 
+                      ? 'text-green-600' 
+                      : 'text-gray-700 hover:text-green-600'
+                  }`}
+                >
+                  {item}
+                  {currentSection === index && (
+                    <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-green-600 rounded-full"></div>
+                  )}
+                </button>
+              ))}
             </div>
 
-            {/* CTA Buttons Stylés */}
+            {/* Boutons Épurés */}
             <div className="flex items-center space-x-4">
               <button 
                 onClick={onClientLogin}
-                className="hidden md:flex items-center space-x-2 px-6 py-3 bg-white/10 backdrop-blur-xl text-white border border-white/20 hover:bg-white/20 hover:border-white/30 font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg"
+                className="hidden md:block text-gray-700 hover:text-green-600 font-medium text-sm transition-colors duration-200"
               >
-                <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
-                <span>Client Existant</span>
+                Client Existant
               </button>
-              
               <button 
                 onClick={onNewClient}
-                className="relative overflow-hidden px-8 py-3 bg-gradient-to-r from-green-500 via-emerald-500 to-green-600 text-white font-bold rounded-xl transition-all duration-300 shadow-2xl hover:shadow-green-500/25 hover:scale-110 group"
+                className="bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-2.5 rounded-lg transition-all duration-200 shadow-sm hover:shadow-md"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="relative flex items-center space-x-2">
-                  <span>✨</span>
-                  <span>Commencer</span>
-                  <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
-                </div>
+                Commencer
               </button>
             </div>
 
-            {/* Hamburger Menu Stylé */}
+            {/* Menu Mobile */}
             <div className="lg:hidden">
               <button 
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="relative p-3 bg-white/10 backdrop-blur-xl text-white rounded-xl border border-white/20 transition-all duration-300 hover:bg-white/20 group"
+                className="p-2 text-gray-700 hover:text-green-600 transition-colors duration-200"
               >
-                <div className="w-6 h-0.5 bg-white rounded-full transition-all duration-300 group-hover:bg-green-400"></div>
-                <div className="w-6 h-0.5 bg-white rounded-full mt-1.5 transition-all duration-300 group-hover:bg-green-400"></div>
-                <div className="w-6 h-0.5 bg-white rounded-full mt-1.5 transition-all duration-300 group-hover:bg-green-400"></div>
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
               </button>
             </div>
           </div>
 
-          {/* Menu Mobile Stylé */}
+          {/* Menu Mobile Dropdown */}
           {isMenuOpen && (
-            <div className="lg:hidden absolute top-full left-0 w-full bg-gradient-to-br from-slate-900/98 via-slate-800/98 to-slate-900/98 backdrop-blur-2xl border-t border-white/10 shadow-2xl">
-              <div className="px-6 py-8 space-y-3">
+            <div className="lg:hidden border-t border-gray-100 bg-white">
+              <div className="px-6 py-4 space-y-2">
                 {[
-                  { name: 'Accueil', index: 0, icon: '🏠' },
-                  { name: 'Services', index: 1, icon: '⚡' },
-                  { name: 'À Propos', index: 2, icon: '💼' },
-                  { name: 'Ressources', index: 3, icon: '📚' },
-                  { name: 'Contact', index: 4, icon: '📞' },
-                  { name: 'Blog', index: 5, icon: '📝' },
-                  { name: 'Calculateurs', index: 6, icon: '🧮' },
-                  { name: 'Échéancier', index: 7, icon: '📅' }
-                ].map((item) => (
+                  'Accueil', 'Services', 'À Propos', 'Ressources', 'Contact', 'Blog', 'Calculateurs', 'Échéancier'
+                ].map((item, index) => (
                   <button
-                    key={item.name}
+                    key={item}
                     onClick={() => {
-                      scrollToSection(item.index);
+                      scrollToSection(index);
                       setIsMenuOpen(false);
                     }}
-                    className="w-full flex items-center space-x-4 px-6 py-4 text-white/80 hover:text-white hover:bg-white/10 rounded-xl transition-all duration-300 font-semibold hover:scale-105 hover:shadow-lg"
+                    className="w-full text-left px-4 py-3 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-lg transition-all duration-200 font-medium"
                   >
-                    <span className="text-lg">{item.icon}</span>
-                    <span>{item.name}</span>
+                    {item}
                   </button>
                 ))}
                 
-                <div className="border-t border-white/10 pt-6 mt-6 space-y-3">
+                <div className="border-t border-gray-100 pt-4 mt-4 space-y-2">
                   <button 
                     onClick={() => {
                       onClientLogin && onClientLogin();
                       setIsMenuOpen(false);
                     }}
-                    className="w-full px-6 py-4 bg-white/10 backdrop-blur-xl text-white rounded-xl transition-all duration-300 hover:bg-white/20 font-semibold hover:scale-105"
+                    className="w-full px-4 py-3 text-gray-700 hover:text-green-600 hover:bg-gray-50 rounded-lg transition-all duration-200 font-medium"
                   >
-                    🔑 Client Existant
+                    Client Existant
                   </button>
                   <button 
                     onClick={() => {
                       onNewClient && onNewClient();
                       setIsMenuOpen(false);
                     }}
-                    className="w-full px-6 py-4 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-xl transition-all duration-300 font-bold hover:scale-105 shadow-lg"
+                    className="w-full px-4 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-all duration-200 font-medium"
                   >
-                    ✨ Commencer Maintenant
+                    Commencer
                   </button>
                 </div>
               </div>
