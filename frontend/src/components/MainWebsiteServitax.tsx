@@ -206,51 +206,143 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
 
   return (
     <div className="min-h-screen bg-servitax-light">
-      {/* Navigation Header - Simple et Élégant */}
-      <nav className="nav-servitax fixed top-0 w-full z-50">
-        <div className="container-servitax">
+      {/* Navigation Header - Design Premium Moderne */}
+      <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-slate-900/95 via-slate-800/95 to-slate-900/95 backdrop-blur-xl border-b border-white/10 shadow-2xl">
+        <div className="max-w-7xl mx-auto px-6">
           <div className="flex justify-between items-center h-20">
             
-            {/* Logo Simple */}
-            <div className="flex items-center">
-              <img 
-                src="https://images.squarespace-cdn.com/content/v1/66ef3c957777764cc84b623b/1726954665342-8809OIRJ09Q87W6TF19N/WM2.jpg?format=1500w"
-                alt="ServitTax"
-                className="h-12 w-auto"
-              />
+            {/* Logo Premium */}
+            <div className="flex items-center group">
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-500 rounded-2xl blur-lg opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
+                <div className="relative h-12 w-auto bg-white rounded-xl shadow-2xl p-2 group-hover:scale-105 transition-transform duration-300">
+                  <img 
+                    src="https://images.squarespace-cdn.com/content/v1/66ef3c957777764cc84b623b/1726954665342-8809OIRJ09Q87W6TF19N/WM2.jpg?format=1500w"
+                    alt="ServitTax"
+                    className="h-full w-auto object-contain"
+                  />
+                </div>
+              </div>
             </div>
 
-            {/* Navigation Simple */}
-            <div className="hidden lg:flex items-center space-x-8">
-              {['Accueil', 'Services', 'À Propos', 'Ressources', 'Contact', 'Blog', 'Calculateurs', 'Échéancier'].map((item, index) => (
-                <button
-                  key={item}
-                  onClick={() => scrollToSection(index)}
-                  className={`text-white/90 hover:text-white font-medium transition-colors duration-300 ${
-                    currentSection === index ? 'text-servitax-secondary' : ''
-                  }`}
-                >
-                  {item}
-                </button>
-              ))}
+            {/* Navigation Moderne avec Glass Effect */}
+            <div className="hidden lg:flex items-center">
+              <div className="flex items-center space-x-1 bg-white/5 backdrop-blur-2xl rounded-2xl p-1.5 border border-white/10 shadow-xl">
+                {[
+                  { name: 'Accueil', index: 0, icon: '🏠' },
+                  { name: 'Services', index: 1, icon: '⚡' },
+                  { name: 'À Propos', index: 2, icon: '💼' },
+                  { name: 'Ressources', index: 3, icon: '📚' },
+                  { name: 'Contact', index: 4, icon: '📞' },
+                  { name: 'Blog', index: 5, icon: '📝' },
+                  { name: 'Calculateurs', index: 6, icon: '🧮' },
+                  { name: 'Échéancier', index: 7, icon: '📅' }
+                ].map((item) => (
+                  <button
+                    key={item.name}
+                    onClick={() => scrollToSection(item.index)}
+                    className={`relative px-4 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 flex items-center space-x-2 ${
+                      currentSection === item.index 
+                        ? 'bg-gradient-to-r from-green-500 to-emerald-500 text-white shadow-lg scale-105' 
+                        : 'text-white/80 hover:text-white hover:bg-white/10 hover:scale-105'
+                    }`}
+                  >
+                    <span className="text-xs">{item.icon}</span>
+                    <span>{item.name}</span>
+                    {currentSection === item.index && (
+                      <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-emerald-400 rounded-xl opacity-20 animate-pulse"></div>
+                    )}
+                  </button>
+                ))}
+              </div>
             </div>
 
-            {/* Boutons Simple */}
+            {/* CTA Buttons Stylés */}
             <div className="flex items-center space-x-4">
               <button 
                 onClick={onClientLogin}
-                className="hidden md:block text-white/90 hover:text-white font-medium transition-colors duration-300"
+                className="hidden md:flex items-center space-x-2 px-6 py-3 bg-white/10 backdrop-blur-xl text-white border border-white/20 hover:bg-white/20 hover:border-white/30 font-semibold rounded-xl transition-all duration-300 hover:scale-105 shadow-lg"
               >
-                Client Existant
+                <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                <span>Client Existant</span>
               </button>
+              
               <button 
                 onClick={onNewClient}
-                className="bg-servitax-secondary hover:bg-servitax-green-600 text-white font-medium py-2 px-6 rounded-lg transition-colors duration-300"
+                className="relative overflow-hidden px-8 py-3 bg-gradient-to-r from-green-500 via-emerald-500 to-green-600 text-white font-bold rounded-xl transition-all duration-300 shadow-2xl hover:shadow-green-500/25 hover:scale-110 group"
               >
-                Commencer
+                <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="relative flex items-center space-x-2">
+                  <span>✨</span>
+                  <span>Commencer</span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
+                </div>
+              </button>
+            </div>
+
+            {/* Hamburger Menu Stylé */}
+            <div className="lg:hidden">
+              <button 
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="relative p-3 bg-white/10 backdrop-blur-xl text-white rounded-xl border border-white/20 transition-all duration-300 hover:bg-white/20 group"
+              >
+                <div className="w-6 h-0.5 bg-white rounded-full transition-all duration-300 group-hover:bg-green-400"></div>
+                <div className="w-6 h-0.5 bg-white rounded-full mt-1.5 transition-all duration-300 group-hover:bg-green-400"></div>
+                <div className="w-6 h-0.5 bg-white rounded-full mt-1.5 transition-all duration-300 group-hover:bg-green-400"></div>
               </button>
             </div>
           </div>
+
+          {/* Menu Mobile Stylé */}
+          {isMenuOpen && (
+            <div className="lg:hidden absolute top-full left-0 w-full bg-gradient-to-br from-slate-900/98 via-slate-800/98 to-slate-900/98 backdrop-blur-2xl border-t border-white/10 shadow-2xl">
+              <div className="px-6 py-8 space-y-3">
+                {[
+                  { name: 'Accueil', index: 0, icon: '🏠' },
+                  { name: 'Services', index: 1, icon: '⚡' },
+                  { name: 'À Propos', index: 2, icon: '💼' },
+                  { name: 'Ressources', index: 3, icon: '📚' },
+                  { name: 'Contact', index: 4, icon: '📞' },
+                  { name: 'Blog', index: 5, icon: '📝' },
+                  { name: 'Calculateurs', index: 6, icon: '🧮' },
+                  { name: 'Échéancier', index: 7, icon: '📅' }
+                ].map((item) => (
+                  <button
+                    key={item.name}
+                    onClick={() => {
+                      scrollToSection(item.index);
+                      setIsMenuOpen(false);
+                    }}
+                    className="w-full flex items-center space-x-4 px-6 py-4 text-white/80 hover:text-white hover:bg-white/10 rounded-xl transition-all duration-300 font-semibold hover:scale-105 hover:shadow-lg"
+                  >
+                    <span className="text-lg">{item.icon}</span>
+                    <span>{item.name}</span>
+                  </button>
+                ))}
+                
+                <div className="border-t border-white/10 pt-6 mt-6 space-y-3">
+                  <button 
+                    onClick={() => {
+                      onClientLogin && onClientLogin();
+                      setIsMenuOpen(false);
+                    }}
+                    className="w-full px-6 py-4 bg-white/10 backdrop-blur-xl text-white rounded-xl transition-all duration-300 hover:bg-white/20 font-semibold hover:scale-105"
+                  >
+                    🔑 Client Existant
+                  </button>
+                  <button 
+                    onClick={() => {
+                      onNewClient && onNewClient();
+                      setIsMenuOpen(false);
+                    }}
+                    className="w-full px-6 py-4 bg-gradient-to-r from-green-500 to-emerald-500 text-white rounded-xl transition-all duration-300 font-bold hover:scale-105 shadow-lg"
+                  >
+                    ✨ Commencer Maintenant
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
