@@ -254,8 +254,10 @@
 
 /* Professional navigation styles avec nouveau bleu */
 .nav-servitax {
-  @apply bg-servitax-primary/95 backdrop-blur-xl border-b border-servitax-primary/20 shadow-lg;
-  background-color: rgba(65, 74, 87, 0.95);
+  background-color: #414a57;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(65, 74, 87, 0.2);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .nav-item-servitax {
