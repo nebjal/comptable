@@ -68,6 +68,23 @@
   .btn-servitax-outline:hover {
     background-color: #4CAF50;
   }
+
+  /* Classes utilitaires pour remplacer les couleurs hardcodées */
+  .bg-servitax-green {
+    background-color: #4CAF50 !important;
+  }
+  
+  .bg-servitax-green:hover {
+    background-color: #388E3C !important;
+  }
+  
+  .text-servitax-green {
+    color: #4CAF50 !important;
+  }
+  
+  .border-servitax-green {
+    border-color: #4CAF50 !important;
+  }
 }
 
 /* Professional Card Styles */
