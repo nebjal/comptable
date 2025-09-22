@@ -177,7 +177,10 @@ const BlogSection = ({ onArticleClick }: { onArticleClick?: (articleId: string) 
                   {post.excerpt}
                 </p>
                 
-                <button className="inline-flex items-center text-servitax-primary font-semibold hover:text-servitax-secondary transition-colors duration-300">
+                <button 
+                  onClick={() => onArticleClick?.(post.id.toString())}
+                  className="inline-flex items-center text-servitax-primary font-semibold hover:text-servitax-secondary transition-colors duration-300"
+                >
                   Lire l'article
                   <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
                 </button>
