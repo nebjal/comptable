@@ -286,16 +286,16 @@ export default function MainWebsiteServitax({ onClientLogin, onNewClient, onAdmi
               <div className="flex flex-col sm:flex-row gap-6">
                 <button 
                   onClick={onNewClient}
-                  className="bg-servitax-primary hover:bg-servitax-blue-700 text-white font-semibold text-lg px-8 py-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                  className="btn-servitax-primary text-lg px-8 py-4"
                 >
                   <Play className="h-6 w-6 mr-3" />
-                  Commencer maintenant!
+                  Commencez maintenant!
                   <ArrowRight className="h-6 w-6 ml-3" />
                 </button>
 
-                <button className="bg-white/20 backdrop-blur-sm text-white border border-white/30 hover:bg-white/30 font-semibold text-lg px-8 py-4 rounded-xl transition-all duration-300">
+                <button className="btn-servitax-outline text-lg px-8 py-4">
                   <Calendar className="h-6 w-6 mr-3" />
-                  Consultation gratuite
+                  Nous contacter
                 </button>
               </div>
 
