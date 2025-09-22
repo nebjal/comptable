@@ -248,7 +248,7 @@
 /* Professional focus styles */
 .focus-servitax:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 121, 107, 0.2);
+  box-shadow: 0 0 0 3px rgba(65, 74, 87, 0.2);
   border-color: var(--servitax-primary);
 }
 
