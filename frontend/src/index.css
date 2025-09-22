@@ -213,9 +213,9 @@
   box-shadow: 0 8px 32px rgba(65, 74, 87, 0.2);
 }
 
-/* Professional Text Gradients */
+/* Professional Text Gradients - Palette ServitTax */
 .text-gradient-servitax {
-  background: linear-gradient(135deg, #414a57 0%, #6abe5e 50%, #5ca856 100%);
+  background: linear-gradient(135deg, #414a57 0%, #4CAF50 50%, #66BB6A 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -224,7 +224,7 @@
 }
 
 .text-gradient-accent {
-  background: linear-gradient(135deg, #6abe5e 0%, #5ca856 50%, #4f914c 100%);
+  background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 50%, #43A047 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
