@@ -225,20 +225,16 @@ export default function MainWebsite() {
       <nav className="fixed top-0 left-0 w-full z-50 bg-black/20 backdrop-blur-2xl border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center">
               <div className="relative">
-                <div className="w-12 h-12 rounded-2xl overflow-hidden shadow-2xl shadow-cyan-500/25">
+                <div className="w-16 h-16 rounded-2xl overflow-hidden shadow-2xl shadow-cyan-500/25 bg-white p-2">
                   <img 
                     src="https://images.squarespace-cdn.com/content/v1/66ef3c957777764cc84b623b/1726954665342-8809OIRJ09Q87W6TF19N/WM2.jpg?format=1500w"
                     alt="ServitTax Logo"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain"
                   />
                 </div>
                 <div className="absolute -top-1 -right-1 w-4 h-4 bg-emerald-400 rounded-full animate-ping"></div>
-              </div>
-              <div>
-                <h1 className="text-2xl font-black text-white">Centre Pro des Impôts</h1>
-                <p className="text-xs text-cyan-300/70">Excellence Comptable Canadienne</p>
               </div>
             </div>
 
