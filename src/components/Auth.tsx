@@ -153,7 +153,7 @@ const Auth = ({ onLogin, onShowClientRegistration, userType = null, onSwitchUser
 
                 <div className="space-y-4">
                   <button
-                    onClick={() => handleTypeSelection('admin')}
+                    onClick={() => onSwitchUserType && onSwitchUserType('admin')}
                     className="w-full p-6 bg-white border-2 border-gray-200 rounded-2xl hover:border-servitax-primary hover:bg-servitax-primary/5 transition-all duration-300 group"
                   >
                     <div className="flex items-center space-x-4">
@@ -169,7 +169,7 @@ const Auth = ({ onLogin, onShowClientRegistration, userType = null, onSwitchUser
                   </button>
 
                   <button
-                    onClick={() => handleTypeSelection('client')}
+                    onClick={() => onSwitchUserType && onSwitchUserType('client')}
                     className="w-full p-6 bg-white border-2 border-gray-200 rounded-2xl hover:border-servitax-secondary hover:bg-servitax-secondary/5 transition-all duration-300 group"
                   >
                     <div className="flex items-center space-x-4">
