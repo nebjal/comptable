@@ -206,11 +206,8 @@ const CalculatorsSection = ({ onCalculatorClick }: { onCalculatorClick?: (calcul
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {category.calculators.map((calculator, calcIndex) => (
-                  <a
+                  <div
                     key={calcIndex}
-                    href={calculator.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="group bg-gradient-to-br from-gray-50 to-white rounded-3xl p-6 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-servitax-primary/20"
                   >
                     <div className="flex items-start justify-between mb-4">
