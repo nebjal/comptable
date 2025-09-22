@@ -294,7 +294,7 @@ const ClientDashboardServitax = () => {
                   <div className="text-green-600 text-sm">Optimisez vos cotisations</div>
                 </div>
               </div>
-              <button className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 transition-colors duration-300">
+              <button className="btn-servitax-accent">
                 Utiliser
               </button>
             </div>
