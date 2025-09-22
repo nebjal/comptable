@@ -105,7 +105,7 @@ export default function Projects() {
           <h1 className="text-3xl font-bold text-gray-900">Projets</h1>
           <p className="text-gray-600 mt-2">Gérez et suivez vos projets</p>
         </div>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg flex items-center space-x-2 transition-colors" onClick={handleAddProject}>
+        <button className="btn-servitax-primary flex items-center space-x-2" onClick={handleAddProject}>
           <Plus className="w-5 h-5" />
           <span>Nouveau Projet</span>
         </button>
