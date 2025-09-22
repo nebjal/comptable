@@ -181,19 +181,19 @@
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 121, 107, 0.1);
+  box-shadow: 0 8px 32px rgba(65, 74, 87, 0.1);
 }
 
 .glass-servitax-dark {
-  background: rgba(0, 121, 107, 0.1);
+  background: rgba(65, 74, 87, 0.1);
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(0, 121, 107, 0.2);
-  box-shadow: 0 8px 32px rgba(0, 121, 107, 0.2);
+  border: 1px solid rgba(65, 74, 87, 0.2);
+  box-shadow: 0 8px 32px rgba(65, 74, 87, 0.2);
 }
 
 /* Professional Text Gradients */
 .text-gradient-servitax {
-  background: linear-gradient(135deg, #00796b 0%, #4db6ac 50%, #00bcd4 100%);
+  background: linear-gradient(135deg, #414a57 0%, #6abe5e 50%, #5ca856 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -202,7 +202,7 @@
 }
 
 .text-gradient-accent {
-  background: linear-gradient(135deg, #00bcd4 0%, #26c6da 50%, #4dd0e1 100%);
+  background: linear-gradient(135deg, #6abe5e 0%, #5ca856 50%, #4f914c 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
